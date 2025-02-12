@@ -1,0 +1,16 @@
+program TIC.PROJ;
+
+uses
+  Vcl.Forms,
+  TICTAC in 'TICTAC.pas' {GameWorld},
+  frm_welcomepage in 'frm_welcomepage.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TGameWorld, GameWorld);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

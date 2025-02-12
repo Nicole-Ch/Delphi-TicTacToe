@@ -1,0 +1,290 @@
+object frmGameWorld: TfrmGameWorld
+  Left = 0
+  Top = 0
+  Caption = 'frmGameWorld'
+  ClientHeight = 699
+  ClientWidth = 1499
+  Color = clSilver
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnCreate = FormCreate
+  OnShow = FormShow
+  TextHeight = 15
+  object Panel1: TPanel
+    Left = -9
+    Top = 0
+    Width = 1462
+    Height = 141
+    Color = clHighlight
+    ParentBackground = False
+    TabOrder = 0
+    object lblTictactoe: TLabel
+      Left = 1
+      Top = 1
+      Width = 1460
+      Height = 131
+      Align = alTop
+      Caption = '        TIC TAC TOE '#55358#56596
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -96
+      Font.Name = 'Kristen ITC'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ExplicitWidth = 1115
+    end
+  end
+  object Panel2: TPanel
+    Left = -17
+    Top = 119
+    Width = 1460
+    Height = 580
+    Color = clHighlight
+    ParentBackground = False
+    TabOrder = 1
+    object lblX: TLabel
+      Left = 985
+      Top = 95
+      Width = 159
+      Height = 48
+      Caption = 'Player x :'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -36
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblY: TLabel
+      Left = 985
+      Top = 165
+      Width = 146
+      Height = 48
+      Caption = 'Player y:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -36
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblPlayerX: TLabel
+      Left = 1167
+      Top = 101
+      Width = 21
+      Height = 48
+      Caption = '0'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -36
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblPlayerY: TLabel
+      Left = 1167
+      Top = 165
+      Width = 21
+      Height = 48
+      Caption = '0'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -36
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Playervsplayer: TLabel
+      Left = 971
+      Top = 28
+      Width = 273
+      Height = 45
+      Caption = 'WHO VS WHO'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clYellow
+      Font.Height = -40
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object btnTic1: TButton
+      Left = 80
+      Top = 16
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnTic1Click
+    end
+    object btnTic2: TButton
+      Left = 336
+      Top = 16
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      OnClick = btnTic2Click
+    end
+    object btnTic3: TButton
+      Left = 592
+      Top = 16
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      OnClick = btnTic3Click
+    end
+    object btnTic4: TButton
+      Left = 80
+      Top = 195
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btnTic4Click
+    end
+    object btnTic5: TButton
+      Left = 336
+      Top = 195
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      OnClick = btnTic5Click
+    end
+    object btnTic8: TButton
+      Left = 336
+      Top = 382
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      OnClick = btnTic8Click
+    end
+    object btnTic7: TButton
+      Left = 80
+      Top = 382
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 6
+      OnClick = btnTic7Click
+    end
+    object btnTic6: TButton
+      Left = 592
+      Top = 195
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 7
+      OnClick = btnTic6Click
+    end
+    object btnExit: TButton
+      Left = 1120
+      Top = 448
+      Width = 113
+      Height = 81
+      Caption = 'Exit'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -28
+      Font.Name = 'Segoe UI Symbol'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 8
+      OnClick = btnExitClick
+    end
+    object btnTic9: TButton
+      Left = 592
+      Top = 382
+      Width = 233
+      Height = 173
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -96
+      Font.Name = '@Malgun Gothic'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 9
+      OnClick = btnTic9Click
+    end
+    object btnReset: TButton
+      Left = 985
+      Top = 448
+      Width = 113
+      Height = 81
+      Caption = 'Reset'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -28
+      Font.Name = 'Segoe UI Symbol'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 10
+      OnClick = btnResetClick
+    end
+    object btnNew: TButton
+      Left = 1032
+      Top = 328
+      Width = 153
+      Height = 106
+      Caption = 'New Game'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clChocolate
+      Font.Height = -28
+      Font.Name = 'Segoe UI Symbol'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 11
+      OnClick = btnNewClick
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 880
+    Top = 256
+  end
+end
